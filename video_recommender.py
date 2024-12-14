@@ -229,7 +229,7 @@ def create_video_card(video_details):
         with col1:
             st.image(
                 "https://via.placeholder.com/150x100.png?text=Video",
-                use_container_width =True
+                use_column_width =True
             )
             
         with col2:
