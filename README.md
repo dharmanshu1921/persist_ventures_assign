@@ -12,11 +12,25 @@ video-recommender/
 ├── video_recommender.py
 ├── api_fetched_data.py
 ├── api_logs/
-│   └── csv/
-│       ├── summary.csv
-│       ├── user.csv
-│       └── rate.csv
-└── myenv
+│   ├── csv/
+│   │   ├── summary.csv
+│   │   ├── user.csv
+│   │   ├── rate.csv
+│   │   ├── like.csv
+│   │   ├── inspire.csv
+│   │   └── view.csv
+│   ├── json/
+│   │   ├── summary.json
+│   │   ├── user.json
+│   │   ├── rate.json
+│   │   ├── like.json
+│   │   ├── inspire.json
+│   │   └── view.json
+│   └── logs/
+│       ├── api_fetch_20241212_145610.log
+│       ├── api_fetch_20241212_145700.log
+└── myenv/
+
 ```
 
 ## Features
@@ -25,7 +39,7 @@ video-recommender/
   - Content-based filtering using video metadata (genre, description, keywords)
   - Collaborative filtering based on user-item interaction data
   - Cold start handling for new users
-  - Mood-based recommendations (Relaxed, Neutral, Energetic)
+  - Mood-based recommendations (Relaxed, Neutral, Energetic, Creative ,Focused)
 
 - **Interactive User Interface**
   - Video cards with detailed information
@@ -43,9 +57,10 @@ video-recommender/
 ## Data Pipeline
 
 - **Data Loading and Processing**
+  - Fetching Data from API
   - Reads metadata and user interaction data from CSV files
   - Cleans and prepares data for analysis
-  - Extracts video metadata from post_summary column
+  - Extracts video metadata from the post_summary column
 
 - **Recommendation Generation**
   - TF-IDF vectorization for content features
@@ -117,7 +132,3 @@ The system includes a dedicated evaluation tab that provides:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
