@@ -2,6 +2,8 @@
 
 A smart video recommendation system built with Streamlit that provides personalized video suggestions based on user preferences and viewing history. The system leverages both content-based and collaborative filtering techniques to deliver tailored recommendations through an interactive web interface.
 
+![Demo](https://youtu.be/NXxmOfZ8Mn4)
+
 ## Project Structure
 
 ```
