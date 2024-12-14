@@ -24,7 +24,9 @@ class VideoRecommender:
         self.mood_categories = {
             'Relaxed': ['Educational', 'Documentary', 'Nature', 'Meditation'],
             'Neutral': ['Comedy', 'Drama', 'Lifestyle', 'Technology'],
-            'Energetic': ['Action', 'Sports', 'Music', 'Adventure']
+            'Energetic': ['Action', 'Sports', 'Music', 'Adventure'],
+            'Creative': ['Art', 'DIY', 'Crafts', 'Design', 'Photography'],
+            'Focused': ['Business', 'Science', 'Programming', 'Mathematics', 'Research']
         }
         
     def load_data(self):
@@ -317,7 +319,7 @@ def main():
                 st.markdown("### 🎭 Select Your Mood")
                 mood = st.radio(
                     "What kind of content are you interested in?",
-                    ['Relaxed', 'Neutral', 'Energetic'],
+                    ['Relaxed', 'Neutral', 'Energetic','Creative','Focused'],
                     help="We'll recommend content based on your mood!"
                 )
                 
